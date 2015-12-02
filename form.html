@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Pink-Mobile Index</title>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	
+		<!--header-->
+	<header class="main-header">
+		<div class="main-header__top top-header">
+			<div class="container">
+				
+				<div class="top-header__logo logo">
+					<img src="#" alt="" class="logo__image" width="" height="">
+				</div>
+
+				<div class="top-header__menu menu-mini">
+					
+				</div>
+
+			</div>
+		</div>
+
+		<div class="main-header__promo promo">
+		<!--в модификаторе promo--image будет картинка бэкграундом так верно? а если картинка поменяется? может лучше вставить тэгом img?-->
+			<div class="container">
+			
+				<p class="promo__text">Конкурс на самое безбашеное путешествие с Пинк</p>
+
+			</div>
+		</div>
+
+	</header>
+
+		<div class="mobile-nav">
+			<li class="mobile-nav__item"><a href="" class="mobile-nav__link link">Информация</a></li>
+			<li class="mobile-nav__item"><a href="" class="mobile-nav__link link">Блог</a></li>
+			<li class="mobile-nav__item"><a href="" class="mobile-nav__link link">Отзывы</a></li>
+			<li class="mobile-nav__item"><a href="" class="mobile-nav__link link">Конкурс</a></li>
+		</div>
+
+	<!--form-->
+	<form ection="echo" method="post" class="form">
+		<div class="container">
+			<p class="form__text">
+				Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! 
+			</p>
+			
+			<fieldset class="form__fieldset">
+				<label class="form__label" for="name-field">Имя:*</label>
+				<input type="text" required name="name-field" id="name-field" placeholder="Введите ваше имя"><br>
+
+				<label class="form__label" for="surname-field">Фамилия:*</label>
+				<input class="form__input" type="text" required name="surname-field" id="surname-field" placeholder="Укажите фамилию"><br>
+				
+				<label class="form__label" for="fathername-field">Отчество:*</label>
+				<input class="form__input" type="text" name="fathername-field" id="fathername-field" placeholder="Ну и отчество тоже">
+			</fieldset>
+		</div>
+
+		<fieldset class="form__fieldset form-radio">
+			<div class="container">
+
+				<legend class="form__legend">С каким приложением путешествовали?*</legend>
+
+				<div class="form-radio__block">
+					<input class="form-radio__btn form-radio__btn--active" type="radio" checked name="app" value="iOS" id="app-iOS">
+					<label class="form-radio__label" for="app-iOS">Pink для iOS</label>
+				</div>
+
+				<div class="form-radio__block">
+					<input class="form-radio__btn" type="radio" name="app" value="Android" id="app-Android">
+					<label class="form-radio__label" for="app-Android">Pink на Android</label>
+				</div>
+
+				<div class="form-radio__block">
+					<input class="form-radio__btn" type="radio" name="app" value="Windows" id="app-Windows">
+					<label class="form-radio__label" for="app-Windows">Windows Phone</label>
+				</div>	
+			</div>
+		</fieldset>
+
+		<fieldset class="form__fieldset form__date">
+			<div class="container">
+
+				<legend>Когда вы путешествовали?</legend>
+
+				<input class="form__input" type="text" required placeholder="1 апреля 2015" name="date-out" id="date-out">
+				<label class="form__label" for="date-out">Дата выезда</label>
+				
+				<!--графу продолжительность как офомить? нужно оборачивать в отдельный блок? И вообще поле и подпись здесь нужно оборачивать в отдельные блоки?-->
+				<div class="form__lenth lenth-tripp">
+					<i class="lenth-trip__range lenth-trip__range--minus"></i>
+
+					<input class="form__input" type="text" name="lenth-tripp" id="lenth-tripp" placeholder="10 дней">
+
+					<i class="form__lenth lenth-trip__range lenth-trip__range--plus"></i>
+				</div>
+
+				<label class="form__label" for="lenth-tripp">Продолжительность</label>
+
+				<input class="form__input" type="text" required placeholder="1 апреля 2015" name="date-back" id="date-back">
+				<label class="form__label" for="date-back">Дата вoзвращения</label>
+			</div>
+		</fieldset>
+
+		<fieldset class="form__fieldset">
+			<div class="container">
+
+				<legend class="form__legend">Количество попутчиков</legend>
+				
+				<!--здесь такое же поле как и в выше продолжительность, я планирую в стилях сделать переопределине стилей или нужно было одни и те же классы присваивать?-->
+				<div class="form__number form-number">
+					<i class="form-number__range form-number__range--minus"></i>
+
+					<input class="form__input" type="text" name="number" id="number" placeholder="2 чел">
+
+					<i class="form-number__range form-number__range--plus"></i>
+				</div>
+
+				<hr>
+
+				<div class="form__fellow fellow-name">
+
+					<div class="fellow-name__wrapper">
+						
+						<!--может быть два лейбла у одного инпута?-->
+						<div class="fellow-name__title">
+							<label class="form__label">№</label>
+							<label class="form__label" for="fellow-name">Имя*</label>
+						</div>
+
+						<div class="fellow-name__stroke">
+							<i class="fellow-name__number"></i>
+							<input type="text" class="form__input" value="Введите ваше имя" name="fellow-name" id="fellow-name">
+						</div>
+
+					</div>
+
+					<div class="fellow-name__wrapper--short">
+						
+						<div class="fellow-name__title">
+							<label for="nickname" class="form__label">Прозвище</label>
+						</div>
+
+						<input type="text" class="form__input" name="nickname" id="nickname" placeholder="Ну как же без этого!">
+
+					</div>	
+	
+				</div>
+
+				<div class="form__fellow fellow-name">
+
+					<div class="fellow-name__wrapper">
+						
+						<!--может быть два лейбла у одного инпута?-->
+						<div class="fellow-name__title">
+							<label class="form__label">№</label>
+							<label class="form__label" for="fellow-name">Имя*</label>
+						</div>
+
+						<div class="fellow-name__stroke">
+							<i class="fellow-name__number"></i>
+							<input type="text" class="form__input" value="Введите ваше имя" name="fellow-name" id="fellow-name">
+						</div>
+
+					</div>
+
+					<div class="fellow-name__wrapper--short">
+						
+						<div class="fellow-name__title">
+							<label for="nickname" class="form__label">Прозвище</label>
+						</div>
+
+						<input type="text" class="form__input" name="nickname" id="nickname" placeholder="Ну как же без этого!">
+
+					</div>	
+				</div>
+			</div>
+		</fieldset>
+
+		<fieldset class="form__fieldset form-checkbox">
+			<div class="container">
+
+				<legend class="form__legend">Ваши безбашенные
+				достижения в путешествии</legend>
+				
+				<div class="form-checkbox__block">
+					<input type="checkbox" checked class="form-checkbox__btn form-checkbox_btn--active">
+					<label for="" class="form-checkbox__label">Сделать селфи с акулой</label>
+				</div>
+				
+				<div class="form-checkbox__block">
+					<input type="checkbox" checked class="form-checkbox__btn form-checkbox_btn--active">
+					<label for="" class="form-checkbox__label">Обгорел на пляже</label>
+				</div>
+
+				<div class="form-checkbox__block">
+					<input type="checkbox" class="form-checkbox__btn">
+					<label for="" class="form-checkbox__label">Видел Чака Норриса</label>
+				</div>
+
+				<div class="form-checkbox__block">
+					<input type="checkbox" class="form-checkbox__btn">
+					<label for="" class="form-checkbox__label">Накупил сувениров</label>
+				</div>
+
+				<div class="form-checkbox__block">
+					<input type="checkbox" checked class="form-checkbox__btn form-checkbox_btn--active">
+					<label for="" class="form-checkbox__label">Удержал башню</label>
+				</div>
+
+				<div class="form-checkbox__block">
+					<input type="checkbox" class="form-checkbox__btn">
+					<label for="" class="form-checkbox__label">Разгромил отель</label>
+				</div>
+
+			</div>
+		</fieldset>
+
+		<fieldset class="form__fieldset form__fieldset--grey form__photo form-photo">
+			<div class="container">
+
+				<legend class="form__legend">Ваши фотографии из поездки*</legend>
+
+				<input type="file" class="form-photo__load" value="Загрузить фото">
+
+				<hr>
+
+				<!--как сделать часть с фотографиями я не знаю-->
+			</div>
+		</fieldset>
+
+		<fieldset class="form__fieldset">
+			
+			<div class="container">
+			
+			<input type="submit" value="Отправить фото" class="button">
+			<span class="form__text">* - обязательные поля</span>
+			
+			</div>
+
+		</fieldset>
+
+	</form>
+
+	<footer class="main-footer">
+
+		<div class="container">
+			
+			<div class="main-footer__logos logo-blok">
+				<img src="#">
+				<img src="#">
+			</div>
+
+			<div class="main-footer__social social-block">
+				
+				<a class="social-block__twitter twitter-icon link" href="#"></a>
+				<a class="social-block__facebook facebook-icon link" href="#"></a>
+				<a class="social-block__youtube youtube-icon link" href="#"></a>
+
+			</div>
+
+			<div class="main-footer__madeby madeby-block">
+				
+				<span class="madeby-block__text">Разработано</span>
+				<img src="" alt="" class="madeby-block__logo logo-html">
+
+			</div>
+		</div>
+		
+	</footer>
+	
+
+<!--лучше ставить placeholder или value у input-->
+<!--графу продолжительность как офомить? нужно оборачивать в отдельный блок? И вообще поле и подпись здесь нужно оборачивать в отдельные блоки?-->
+<!--мне кажется, что у меня очень много оберток-->
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Pink-Mobile Index</title>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	
+	<!--header-->
+	<header class="main-header">
+		<div class="main-header__top top-header">
+			<div class="container">
+				
+				<div class="top-header__logo logo">
+					<img src="#" alt="" class="logo__image" width="" height="">
+				</div>
+
+				<div class="top-header__menu menu-mini">
+					
+				</div>
+
+			</div>
+		</div>
+
+		<div class="main-header__promo promo promo--image">
+		<!--в модификаторе promo--image будет картинка бэкграундом так верно? а если картинка поменяется? может лучше вставить тэгом img?-->
+			<div class="container">
+			
+				<p class="promo__text">Взгляните на жизнь иначе!</p>
+
+			</div>
+		</div>
+
+	</header>
+
+		<div class="mobile-nav">
+			<li class="mobile-nav__item"><a href="" class="mobile-nav__link link">Информация</a></li>
+			<li class="mobile-nav__item"><a href="" class="mobile-nav__link link">Блог</a></li>
+			<li class="mobile-nav__item"><a href="" class="mobile-nav__link link">Отзывы</a></li>
+			<li class="mobile-nav__item"><a href="" class="mobile-nav__link link">Конкурс</a></li>
+		</div>
+
+	<div class="download-block">
+		
+		<div class="container">
+			
+			<button class="button button--download" type="submit">Скачать приложение</button>
+
+			<!--или лучше кнопку сделать так
+			<form action="http://">
+    		<button type="submit">Скачать приложение</button>
+			</form>
+
+			нашла этот способ в интернете, чтобы сделать кнопку ссылкой. у нас ведь кнопка должна быть ссылкой?-->
+
+			<div class="download-block__os os">
+				<div class="os__icons os-icons">
+					
+					<div class="os-icons__apple"></div>
+					<div class="os-icons__android"></div>
+					<div class="os-icons__windows"></div>
+
+				</div>
+
+				<p class="os__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="information-block">
+		<div class="container">
+
+			<!--нужно ли здесь делать дополнительную обертку для серии элементов information-block__text или, например можно прописать в стилях, что для послденего из эментов нижний отступ сделать больше чем у остальных?-->
+			<p class="information-block__text">Устали от серости мегаполиса?</p>
+			<p class="information-block__text">Нам есть, что вам 
+предложить!</p>
+
+			<div class="information-block__item information-item">
+				<h3 class="information-item__header">Поднимает настроение</h3>
+				<p class="information-item__text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+			</div>
+
+			<div class="information-block__item information-item">
+				<h3 class="information-item__header">Меняет мир вокруг</h3>
+				<p class="information-item__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+			</div>
+
+			<div class="information-block__item information-item">
+				<h3 class="information-item__header">Заводит новых друзей</h3>
+				<p class="information-item__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+			</div>
+			
+			<!--изображение лучше сделать эементом или выделить в отдельный блок?-->
+			<div class="information-block__image">
+				<img src="" alt="" width="" height="">
+			</div>
+
+		</div>	
+	</div>
+
+	<div class="review-slider">
+		<div class="container">
+		
+		<!--здесь лучше создать новый бок и новые элементы или взять уже существующие information-item добавить модификатор, а основные свойства прописать черех препроцессор переопределением свойств-->
+			<div class="review-slider__item slider-item">
+
+				<h3 class="slider-item__header">Николай Петров</h3>
+				<p class="slider-item__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+
+			</div>
+
+			<div class="review-slider__controls slider-controls">
+				<i class="slider-controls__item"></i>
+				<i class="slider-controls__item slider-controls__item--active"></i>
+				<i class="slider-controls__item"></i>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="price-slider">
+		<div class="container">
+			<!--не знаю как лучше сделать этот блок таблицей или отдельными блоками? может вообще картинкой вставить? как работает этот слайдер? в нем ведь галочки и крестики статичны их нельзч проставлять?-->
+			<div class="price-slider__controls slider-controls">
+				<i class="slider-controls__item"></i>
+				<i class="slider-controls__item slider-controls__item--active"></i>
+				<i class="slider-controls__item"></i>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+
+		<div class="contact-block">
+			<div class="container">
+				
+				<p class="contact-block__text">Остались вопросы?
+					Свяжитесь с нами!</p>
+
+				<div class="contact-block__items">
+					
+					<div class="contact-block__item contact-item">
+						<h3 class="contact-item__header">Звоните:</h3>
+						<span class="contact-item__text">+7 (812) 555-66-66</span>
+					</div>
+
+					<div class="contact-block__item contact-item">
+						<h3 class="contact-item__header">Пишите:</h3>
+						<span class="contact-item__text">mail@htmlacademy.ru</span>
+					</div>
+
+					<div class="contact-block__item contact-item">
+						<h3 class="contact-item__header">Приезжайте в гости:</h3>
+						<span class="contact-item__text">ул. Большая Конюшенная, 19/8</span>
+					</div>
+
+				</div>	
+			</div>
+			
+			<div class="contact-block__map map">
+				
+			</div>
+
+		</div>
+	</footer>
+</body>
+</html>
+
+<!--где здесь заголовок?
+некоторые блоки другого цвета. как лучше создать глобальный класс или модификаторами менять?-->
