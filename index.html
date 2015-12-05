@@ -13,102 +13,106 @@
 			<div class="container">
 				
 				<div class="top-header__logo logo">
-					<img src="#" alt="" class="logo__image" width="" height="">
+					<a class="logo__image" href=""><img src="#" alt="" width="" height="" alt="" title=""></a>
 				</div>
 
-				<div class="top-header__menu menu-mini">
-					
-				</div>
+				<div class="main-header__nav nav">
+					<div class="nav__icon"></div>
 
+					<ul class="nav__list">
+						<li class="nav__item"><a href="" class="nav__link link">Информация</a></li>
+						<li class="nav__item"><a href="" class="nav__link link">Блог</a></li>
+						<li class="nav__item"><a href="" class="nav__link link">Отзывы</a></li>
+						<li class="nav__item"><a href="" class="nav__link link">Конкурс</a></li>
+					</ul>
+
+				</div>
 			</div>
 		</div>
 
-		<div class="main-header__promo promo promo--image">
-		<!--в модификаторе promo--image будет картинка бэкграундом так верно? а если картинка поменяется? может лучше вставить тэгом img?-->
+		<div class="main-header__promo promo">
+
+	<!--нужен здесь контейнер? здесь картинка спозиционирована или флоат?-->
 			<div class="container">
 			
 				<p class="promo__text">Взгляните на жизнь иначе!</p>
-
+			
+				<div class="promo__image">
+					<img src="#" width="" height="" alt="">	
+				</div>
+				
 			</div>
+
 		</div>
 
-	</header>
+	</header>	
 
-		<div class="mobile-nav">
-			<li class="mobile-nav__item"><a href="" class="mobile-nav__link link">Информация</a></li>
-			<li class="mobile-nav__item"><a href="" class="mobile-nav__link link">Блог</a></li>
-			<li class="mobile-nav__item"><a href="" class="mobile-nav__link link">Отзывы</a></li>
-			<li class="mobile-nav__item"><a href="" class="mobile-nav__link link">Конкурс</a></li>
-		</div>
-
-	<div class="download-block">
+	<div class="download">
 		
 		<div class="container">
 			
-			<button class="button button--download" type="submit">Скачать приложение</button>
+			<!--вроде же кнопка всегда отдельным блоком верстается, а если на других страницах другие кнопки?-->
+			<a href="#" class="button button--download">Скачать приложение</a>
 
-			<!--или лучше кнопку сделать так
-			<form action="http://">
-    		<button type="submit">Скачать приложение</button>
-			</form>
-
-			нашла этот способ в интернете, чтобы сделать кнопку ссылкой. у нас ведь кнопка должна быть ссылкой?-->
-
-			<div class="download-block__os os">
-				<div class="os__icons os-icons">
+			<div class="download__sistems">
 					
-					<div class="os-icons__apple"></div>
-					<div class="os-icons__android"></div>
-					<div class="os-icons__windows"></div>
+					<div class="download__apple"></div>
+					<div class="download__android"></div>
+					<div class="download__windows"></div>
 
-				</div>
-
-				<p class="os__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
 			</div>
+
+			<p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
 
 		</div>
 
 	</div>
 
-	<div class="information-block">
+	<div class="information">
+
 		<div class="container">
+		
+			<div class="information__promo">
 
-			<!--нужно ли здесь делать дополнительную обертку для серии элементов information-block__text или, например можно прописать в стилях, что для послденего из эментов нижний отступ сделать больше чем у остальных?-->
-			<p class="information-block__text">Устали от серости мегаполиса?</p>
-			<p class="information-block__text">Нам есть, что вам 
-предложить!</p>
+				<p class="information__title">Устали от серости мегаполиса?</p>
+				<p class="information__title">Нам есть, что вам предложить!</p>
 
-			<div class="information-block__item information-item">
-				<h3 class="information-item__header">Поднимает настроение</h3>
-				<p class="information-item__text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
 			</div>
 
-			<div class="information-block__item information-item">
-				<h3 class="information-item__header">Меняет мир вокруг</h3>
-				<p class="information-item__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+			<!--может ли этот блок быть реиспользован?-->
+
+			<div class="information__item">
+				<h3 class="information__header">Поднимает настроение</h3>
+				<p class="information__text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
 			</div>
 
-			<div class="information-block__item information-item">
-				<h3 class="information-item__header">Заводит новых друзей</h3>
-				<p class="information-item__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+			<div class="information__item">
+				<h3 class="information__header">Меняет мир вокруг</h3>
+				<p class="information__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+			</div>
+
+			<div class="information__item">
+				<h3 class="information__header">Заводит новых друзей</h3>
+				<p class="information__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
 			</div>
 			
-			<!--изображение лучше сделать эементом или выделить в отдельный блок?-->
-			<div class="information-block__image">
+			<div class="information__image">
 				<img src="" alt="" width="" height="">
 			</div>
 
-		</div>	
+		</div>
+
 	</div>
 
 	<div class="review-slider">
-		<div class="container">
 		
-		<!--здесь лучше создать новый бок и новые элементы или взять уже существующие information-item добавить модификатор, а основные свойства прописать черех препроцессор переопределением свойств-->
-			<div class="review-slider__item slider-item">
+		<div class="container">
 
-				<h3 class="slider-item__header">Николай Петров</h3>
-				<p class="slider-item__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+			<div class="review-slider__item">
+
+				<h3 class="review-slider__header">Николай Петров</h3>
+
+				<p class="review-slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
 
 			</div>
 
@@ -119,35 +123,121 @@
 			</div>
 
 		</div>
+
 	</div>
 
 	<div class="price-slider">
+
 		<div class="container">
-			<!--не знаю как лучше сделать этот блок таблицей или отдельными блоками? может вообще картинкой вставить? как работает этот слайдер? в нем ведь галочки и крестики статичны их нельзч проставлять?-->
+
+			<div class="table-wrapper">
+
+				<table class="price-table">
+
+				<tr class="price-table__row">
+
+					<th class="price-table__header">
+						<span class="price-table__name">База</span>
+						<span class="price-table__price">1,99 USD</span>
+					</th>
+
+
+					<th class="price-table__header">
+						<span class="price-table__name">Стандарт</span>
+						<span class="price-table__price">3,99 USD</span>
+					</th>
+
+
+					<th class="price-table__header">
+						<span class="price-table__name">Анлим</span>
+						<span class="price-table__price">9,99 USD</span>
+					</th>
+
+				</tr>
+
+				<tr class="price-table__row">
+					
+					<td class="price-table__text">Розовый фильтр</td>
+					
+					<td class="price-table__cell">
+						<span class="price-table__icon price-table__icon--checked"></span>
+					</td>
+
+					<td class="price-table__cell">
+						<span class="price-table__icon price-table__icon--checked"></span>
+					</td>
+
+					<td class="price-table__cell">
+						<span class="price-table__icon price-table__icon--checked"></span>
+					</td>
+
+				</tr>
+
+				<tr class="price-table__row">
+					
+					<td class="price-table__text">Смайлики</td>
+					
+					<td class="price-table__cell">
+						<span class="price-table__icon price-table__icon--unchecked"></span>
+					</td>
+
+					<td class="price-table__cell">
+						<span class="price-table__icon price-table__icon--checked"></span>
+					</td>
+
+					<td class="price-table__cell">
+						<span class="price-table__icon price-table__icon--checked"></span>
+					</td>
+
+				</tr>
+
+				<tr class="price-table__row">
+					
+					<td class="price-table__text">Комментарии</td>
+					
+					<td class="price-table__cell">
+						<span class="price-table__icon price-table__icon--unchecked"></span>
+					</td>
+
+					<td class="price-table__cell">
+						<span class="price-table__icon price-table__icon--unchecked"></span>
+					</td>
+
+					<td class="price-table__cell">
+						<span class="price-table__icon price-table__icon--checked"></span>
+					</td>
+
+				</tr>
+
+			</table>
+				
+			</div>
+
 			<div class="price-slider__controls slider-controls">
 				<i class="slider-controls__item"></i>
 				<i class="slider-controls__item slider-controls__item--active"></i>
 				<i class="slider-controls__item"></i>
 			</div>
+
 		</div>
+
 	</div>
 
-	<footer>
+	<footer class="footer">
 
-		<div class="contact-block">
+		<div class="footer__contact">
 			<div class="container">
 				
-				<p class="contact-block__text">Остались вопросы?
+				<p class="footer__title">Остались вопросы?
 					Свяжитесь с нами!</p>
-
-				<div class="contact-block__items">
 					
-					<div class="contact-block__item contact-item">
-						<h3 class="contact-item__header">Звоните:</h3>
-						<span class="contact-item__text">+7 (812) 555-66-66</span>
+					<!--все эелемнты этого блока я сделала элементами родителя. или лучше делать было отдельным блоком как в последнем варианте?-->
+					<div class="contact__item">
+						<h3 class="contact__header">Звоните:</h3>
+						<span class="contact__text">+7 (812) 555-66-66</span>
 					</div>
 
-					<div class="contact-block__item contact-item">
+					<div class="contact__item">
 						<h3 class="contact-item__header">Пишите:</h3>
 						<span class="contact-item__text">mail@htmlacademy.ru</span>
 					</div>
@@ -157,15 +247,17 @@
 						<span class="contact-item__text">ул. Большая Конюшенная, 19/8</span>
 					</div>
 
-				</div>	
 			</div>
 			
-			<div class="contact-block__map map">
+			<!--карту нужно выделять в отдельный блок?-->
+			<div class="contact__map map">
 				
 			</div>
 
 		</div>
+
 	</footer>
+
 </body>
 </html>
 
