@@ -30,14 +30,22 @@ module.exports = function(grunt) {
               livereload: true,
             },
             css: {
-                files: ['sass/main.scss'],
+                files: ['sass/**/*.scss', 'sass/*.scss'],
                 tasks: ['sass', 'autoprefixer'],
                 options: {
                   spawn: false,
                    livereload: true,
                 },
             },
-        }
+        },
+
+        sprite: {
+            all: {
+              src: 'img/sprite/*.png',
+              dest: 'img/sprite-file.png',
+              destCss: 'css/sprite-file.css'
+            },
+          }
     });
 
 

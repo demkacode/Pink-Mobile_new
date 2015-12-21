@@ -2,15 +2,17 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Pink-Mobile Index</title>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 	<link href="css/style.css" rel="stylesheet">
 </head>
-<body>
-	<header class="main-header">
+<body class="page">
+	<header class="main-header main-header--mod">
 		<div class="main-header__top top-header">
-			<div class="container">
+			<div class="container clearfix">
 				<div class="top-header__logo logo">
-					<a class="logo__image" href=""><img src="#" alt="" width="" height="" alt="" title=""></a>
+					<a class="logo__image" href="#"><img src="img/PINK.png" width="74" height="23" alt="logo" title="logo"></a>
 				</div>
 
 				<div class="main-header__nav nav">
@@ -26,16 +28,16 @@
 			</div>
 		</div>
 
-		<div class="main-header__promo promo">
+		<div class="main-header__promo">
 			<div class="container">
-				<p class="promo__text">Взгляните на жизнь иначе!</p>			
+				<p class="main-header__text main-header__text--mod">Взгляните на жизнь иначе!</p>
 			</div>
 		</div>
 	</header>
 
 
 	<div class="form">
-		<form ection="echo" method="post" class="form">
+		<form ection="echo" method="post">
 			<div class="container">
 				<p class="form__text">
 					Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! 
@@ -43,24 +45,24 @@
 				
 				<fieldset class="form__fieldset">
 					<div class="form__inputgroup">
-						<label class="form__label" for="name-field">Имя:*</label>
-						<input type="text" required name="name-field" id="name-field" placeholder="Введите ваше имя">
+						<label class="form__label form__label--left" for="name-field">Имя:*</label>
+						<input class="form__input" type="text" required name="name-field" id="name-field" placeholder="Введите ваше имя">
 					</div>
 
 					<div class="form__inputgroup">
-						<label class="form__label" for="surname-field">Фамилия:*</label>
+						<label class="form__label form__label--left" for="surname-field">Фамилия:*</label>
 						<input class="form__input" type="text" required name="surname-field" id="surname-field" placeholder="Укажите фамилию">
 					</div>
 						
 					<div class="form__inputgroup">
-						<label class="form__label" for="fathername-field">Отчество:*</label>
+						<label class="form__label form__label--left" for="fathername-field">Отчество:*</label>
 						<input class="form__input" type="text" name="fathername-field" id="fathername-field" placeholder="Ну и отчество тоже">
 					</div>			
 				</fieldset>
 			</div>
 
 
-			<fieldset class="form__fieldset form-radio">
+			<fieldset class="form__fieldset form__fieldset--grey form-radio">
 				<div class="container">
 					<legend class="form__legend">С каким приложением путешествовали?*</legend>
 
@@ -82,23 +84,25 @@
 			</fieldset>
 
 
-			<fieldset class="form__fieldset form__date">
+			<fieldset class="form__fieldset form-date">
 				<div class="container">
-					<legend>Когда вы путешествовали?</legend>
+					<legend class="form__legend form__legend--center">Когда вы путешествовали?</legend>
 
 					<div class="form__inputgroup">
 						<input class="form__input" type="text" required placeholder="1 апреля 2015" name="date-out" id="date-out">
 						<label class="form__label" for="date-out">Дата выезда</label>
 					</div>
 					
-					<div class="form__inputgroup lenth-tripp">
-						<a class="lenth-trip__range lenth-trip__range--minus"></a>
+					<div class="form__inputgroup form-range">
+						<div class="form-range__stroke clearfix">
+							<a class="form-range__range form-range__range--minus"></a>
 
-						<input class="form__input" type="text" name="lenth-tripp" id="lenth-tripp" placeholder="10 дней">
+							<input class="form__input form-range__result" type="text" name="lenth-trip" id="lenth-trip" placeholder="10 дней">
 
-						<a class="lenth-trip__range lenth-trip__range--plus"></a>
-					
-						<label class="form__label" for="lenth-tripp">
+							<a class="form-range__range form-range__range--plus"></a>
+						</div>
+			
+						<label class="form__label" for="lenth-trip">
 						Продолжительность</label>
 					</div>
 					
@@ -110,63 +114,62 @@
 			</fieldset>
 
 
-			<fieldset class="form__fieldset">
+			<fieldset class="form__fieldset form__fieldset--grey">
 				<div class="container">
 					<legend class="form__legend">Количество попутчиков</legend>
 					
-					<div class="form__inputgroup form-number">
-						<i class="form-number__range form-number__range--minus"></i>
+					<div class="form__inputgroup form__inputgroup--big form-range clearfix">
+						<i class="form-range__range form-range__range--minus"></i>
 
-						<input class="form__input" type="text" name="number" id="number" placeholder="2 чел">
+						<input class="form__input form-range__result" type="text" name="number" id="number" placeholder="2 чел">
 
-						<i class="form-number__range form-number__range--plus"></i>
+						<i class="form-range__range form-range__range--plus"></i>
 					</div>
 
 					<hr>
 
-					<div class="fellow">
+					<div class="fellow clearfix">
 						<div class="form__inputgroup">
-							<div class="fellow__title">
-								<!--а если у спана ситли такие же как у лейбла, один и тот же класс форм__лейбл можно присвоить?-->
-								<span class="fellow__header">№</label>
-								<label class="form__label" for="fellow-name">Имя*</label>
-
+							<div class="fellow__title clearfix">
+								<span class="fellow__header">№</span>
+								<label class="form__label fellow__label" for="fellow-name">Имя*</label>
 							</div>
 
-							<div class="fellow__stroke">
-								<i class="fellow__number"></i>
-								<input type="text" class="form__input" placeholder="Введите ваше имя" name="fellow-name" id="fellow-name">
+							<div class="fellow__stroke clearfix">
+								<span class="fellow__number">1</span>
+								<input type="text" class="form__input fellow__input" placeholder="Введите ваше имя" name="fellow-name" id="fellow-name">
 							</div>
 						</div>	
 
-						<div class="form__inputgroup form__inputgroup--short">
-							<div class="fellow__title">
-								<label for="nickname" class="form__label">Прозвище</label>
+						<div class="form__inputgroup clearfix">
+							<div class="fellow__title clearfix">
+								<label for="nickname" class="form__label fellow__label">Прозвище</label>
 							</div>
 
-							<input type="text" class="form__input" name="nickname" id="nickname" placeholder="Ну как же без этого!">
+							<input type="text" class="form__input fellow__input fellow__input--mod" name="nickname" id="nickname" placeholder="Ну как же без этого!">
 						</div>
 
+
 						<div class="form__inputgroup">
-							<div class="fellow__title">
-								<!--а если у спана ситли такие же как у лейбла, один и тот же класс форм__лейбл можно присвоить?-->
-								<span class="fellow__header">№</label>
-								<label class="form__label" for="fellow-name">Имя*</label>
+							<div class="fellow__title clearfix">
+								<span class="fellow__header">№</span>
+								<label class="form__label fellow__label" for="fellow-name">Имя*</label>
 							</div>
 
-							<div class="fellow__stroke">
-								<i class="fellow__number"></i>
-								<input type="text" class="form__input" placeholder="Введите ваше имя" name="fellow-name" id="fellow-name">
+							<div class="fellow__stroke clearfix">
+								<span class="fellow__number">2</span>
+								<input type="text" class="form__input fellow__input" placeholder="Введите ваше имя" name="fellow-name" id="fellow-name">
 							</div>
 						</div>	
 
-						<div class="form__inputgroup form__inputgroup--short">	
-							<div class="fellow__title">
-								<label for="nickname" class="form__label">Прозвище</label>
+						<div class="form__inputgroup clearfix">
+							<div class="fellow__title clearfix">
+								<label for="nickname" class="form__label fellow__label">Прозвище</label>
 							</div>
 
-							<input type="text" class="form__input" name="nickname" id="nickname" placeholder="Ну как же без этого!">
-						</div>	
+							<input type="text" class="form__input fellow__input fellow__input--mod" name="nickname" id="nickname" placeholder="Ну как же без этого!">
+						</div>
+
 					</div>
 				</div>
 			</fieldset>
@@ -178,92 +181,101 @@
 					достижения в путешествии</legend>
 					
 					<div class="form-checkbox__group">
-						<input type="checkbox" checked class="form-checkbox__btn form-checkbox_btn--active">
-						<label for="" class="form-checkbox__label">Сделать селфи с акулой</label>
+						<input type="checkbox" name="selfy" checked class="form-checkbox__btn form-checkbox_btn--active">
+						<label for="selfy" class="form-checkbox__label">Сделать селфи с акулой</label>
 					</div>
 					
 					<div class="form-checkbox__group">
-						<input type="checkbox" checked class="form-checkbox__btn form-checkbox_btn--active">
-						<label for="" class="form-checkbox__label">Обгорел на пляже</label>
+						<input type="checkbox" name="beach" class="form-checkbox__btn form-checkbox_btn--active">
+						<label for="beach" class="form-checkbox__label">Обгорел на пляже</label>
 					</div>
 
 					<div class="form-checkbox__group">
-						<input type="checkbox" class="form-checkbox__btn">
-						<label for="" class="form-checkbox__label">Видел Чака Норриса</label>
+						<input type="checkbox" name="Chuck" class="form-checkbox__btn">
+						<label for="Chuck" class="form-checkbox__label">Видел Чака Норриса</label>
 					</div>
 
 					<div class="form-checkbox__group">
-						<input type="checkbox" class="form-checkbox__btn">
-						<label for="" class="form-checkbox__label">Накупил сувениров</label>
+						<input type="checkbox" name="souvenir" class="form-checkbox__btn">
+						<label for="souvenir" class="form-checkbox__label">Накупил сувениров</label>
 					</div>
 
 					<div class="form-checkbox__group">
-						<input type="checkbox" checked class="form-checkbox__btn form-checkbox_btn--active">
-						<label for="" class="form-checkbox__label">Удержал башню</label>
+						<input type="checkbox" name="tower" checked class="form-checkbox__btn form-checkbox_btn--active">
+						<label for="tower" class="form-checkbox__label">Удержал башню</label>
 					</div>
 
 					<div class="form-checkbox__group">
-						<input type="checkbox" class="form-checkbox__btn">
-						<label for="" class="form-checkbox__label">Разгромил отель</label>
+						<input type="checkbox" name="hotel" class="form-checkbox__btn">
+						<label for="hotel" class="form-checkbox__label">Разгромил отель</label>
 					</div>
 				</div>
 			</fieldset>
 
 
-			<fieldset class="form__fieldset form__photo form-photo">
+			<fieldset class="form__fieldset form__fieldset--grey form__photo form-photo">
 				<div class="container">
-					<legend class="form__legend">Ваши фотографии из поездки*</legend>
+					<legend class="form__legend form__legend--center">Ваши фотографии из поездки*</legend>
 
-					<input type="file" class="form-photo__load" placeholder="Загрузить фото">
+					<input type="file" class="button button--load" placeholder="Загрузить фото">
 
 					<hr>
 
-					<div class="form-photo__group">
-						<img src="#" alt="" class="form-photo__image">
-						<div class="form-photo__text">IMG-1.JPG</div>
-						<a href="#" class="form-photo__close"></a>
+					<div class="form-photo__row">
+						<div class="form-photo__group">
+							<img src="img/img_1.jpg" alt="img_1" width="68" height="67" class="form-photo__image">
+							<div class="form-photo__text">IMG-1.JPG</div>
+							<a href="#" class="form-photo__close"></a>
+						</div>
+
+						<div class="form-photo__group">
+							<img src="img/img_1.jpg" alt="img_1" width="68" height="67" class="form-photo__image">
+							<div class="form-photo__text">IMG-1.JPG</div>
+							<a href="#" class="form-photo__close"></a>
+						</div>
+
+						<div class="form-photo__group">
+							<img src="img/img_1.jpg" alt="img_1" width="68" height="67" class="form-photo__image">
+							<div class="form-photo__text">IMG-1.JPG</div>
+							<a href="#" class="form-photo__close"></a>
+						</div>
 					</div>
 
-					<div class="form-photo__group">
-						<img src="#" alt="" class="form-photo__image">
-						<div class="form-photo__text">IMG-1.JPG</div>
-						<a href="#" class="form-photo__close"></a>
+					
+
+					<div class="form-photo__row">
+						<div class="form-photo__group">
+							<img src="img/img_1.jpg" alt="img_1" width="68" height="67" class="form-photo__image">
+							<div class="form-photo__text">IMG-1.JPG</div>
+							<a href="#" class="form-photo__close"></a>
+						</div>
+
+						<div class="form-photo__group">
+							<img src="img/img_1.jpg" alt="img_1" width="68" height="67" class="form-photo__image">
+							<div class="form-photo__text">IMG-1.JPG</div>
+							<a href="#" class="form-photo__close"></a>
+						</div>
+
+						<div class="form-photo__group">
+							<img src="img/img_1.jpg" alt="img_1" width="68" height="67" class="form-photo__image">
+							<div class="form-photo__text">IMG-1.JPG</div>
+							<a href="#" class="form-photo__close"></a>
+						</div>
 					</div>
 
-					<div class="form-photo__group">
-						<img src="#" alt="" class="form-photo__image">
-						<div class="form-photo__text">IMG-1.JPG</div>
-						<a href="#" class="form-photo__close"></a>
-					</div>
 
-					<div class="form-photo__group">
-						<img src="#" alt="" class="form-photo__image">
-						<div class="form-photo__text">IMG-1.JPG</div>
-						<a href="#" class="form-photo__close"></a>
-					</div>
+					<div class="form-photo__row">
+						<div class="form-photo__group">
+							<img src="img/img_1.jpg" alt="img_1" width="68" height="67" class="form-photo__image">
+							<div class="form-photo__text">IMG-1.JPG</div>
+							<a href="#" class="form-photo__close"></a>
+						</div>
 
-					<div class="form-photo__group">
-						<img src="#" alt="" class="form-photo__image">
-						<div class="form-photo__text">IMG-1.JPG</div>
-						<a href="#" class="form-photo__close"></a>
-					</div>
-
-					<div class="form-photo__group">
-						<img src="#" alt="" class="form-photo__image">
-						<div class="form-photo__text">IMG-1.JPG</div>
-						<a href="#" class="form-photo__close"></a>
-					</div>
-
-					<div class="form-photo__group">
-						<img src="#" alt="" class="form-photo__image">
-						<div class="form-photo__text">IMG-1.JPG</div>
-						<a href="#" class="form-photo__close"></a>
-					</div>
-
-					<div class="form-photo__group">
-						<img src="#" alt="" class="form-photo__image">
-						<div class="form-photo__text">IMG-1.JPG</div>
-						<a href="#" class="form-photo__close"></a>
+						<div class="form-photo__group">
+							<img src="img/img_1.jpg" alt="img_1" width="68" height="67" class="form-photo__image">
+							<div class="form-photo__text">IMG-1.JPG</div>
+							<a href="#" class="form-photo__close"></a>
+						</div>
 					</div>
 				</div>
 			</fieldset>
@@ -271,8 +283,9 @@
 
 			<fieldset class="form__fieldset">	
 				<div class="container">
-					<input type="submit" placeholder="Отправить фото" class="button">
-					<span class="form__text">* - обязательные поля</span>
+					<input type="submit" value="Отправить форму" class="button button--sent">
+					<span class="form__text form__text--red">*</span> 
+					<span class="form__text form__text--up">– обязательные поля</span>
 				</div>
 			</fieldset>
 		</form>
@@ -282,18 +295,18 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="footer__logo logo-glasses">
-				<img class="logo-glasses__image" src="#">
+				<a class="logo-glasses__image"></a>
 			</div>
 
 			<div class="footer__social social">		
-				<a class="social__twitter twitter-icon link" href="#"></a>
-				<a class="social__facebook facebook-icon link" href="#"></a>
-				<a class="social__youtube youtube-icon link" href="#"></a>
+				<a class="social__icon social__icon--twitter link" href="#"></a>
+				<a class="social__icon social__icon--facebook link" href="#"></a>
+				<a class="social__icon social__icon--youtube link" href="#"></a>
 			</div>
 
 			<div class="footer__madeby madeby-block">
 				<span class="madeby-block__text">Разработано</span>
-				<img src="" alt="" class="madeby-block__logo logo-html">
+				<a class="madeby-block__logo logo-html"></a>
 			</div>
 		</div>
 	</footer>

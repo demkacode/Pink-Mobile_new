@@ -2,40 +2,53 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Pink-Mobile Index</title>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 	<link href="css/style.css" rel="stylesheet">
 </head>
-<body>
-	
-	<!--BEGIN main-header-->
+<body class="page">
 	<header class="main-header">
 		<div class="main-header__top top-header">
-			<div class="container">
-				
+			<div class="container clearfix">
 				<div class="top-header__logo logo">
-					<a class="logo__image" href=""><img src="#" alt="" width="" height="" alt="" title=""></a>
+					<a class="logo__image link" href="form.html"><img src="img/PINK.png" width="74" height="23" alt="logo" title="logo"></a>
 				</div>
 
 				<div class="main-header__nav nav">
 					<div class="nav__icon"></div>
-					<ul class="nav__list">
-						<li class="nav__item"><a href="" class="nav__link link">Информация</a></li>
-						<li class="nav__item"><a href="" class="nav__link link">Блог</a></li>
-						<li class="nav__item"><a href="" class="nav__link link">Отзывы</a></li>
-						<li class="nav__item"><a href="" class="nav__link link">Конкурс</a></li>
-					</ul>
+					
 				</div>
 			</div>
+
+			<ul class="nav__list">
+				<!--в первом пункет обязательно такое нагромождение дивов и классов?-->
+				<li class="nav__item">
+					<div class="container clearfix">
+						<div class="nav__logo logo">
+							<a class="logo__image link" href="form.html"><img src="img/PINK.png" width="74" height="23" alt="logo" title="logo"></a>
+						</div>
+
+						<div class="nav__close">
+							<a href="#" class="nav__closebtn"></a>
+						</div>
+					</div>
+				</li>
+				<li class="nav__item"><a href="" class="nav__link link">Информация</a></li>
+				<li class="nav__item"><a href="" class="nav__link link">Блог</a></li>
+				<li class="nav__item"><a href="" class="nav__link link">Отзывы</a></li>
+				<li class="nav__item"><a href="" class="nav__link link">Конкурс</a></li>
+			</ul>
+
 		</div>
 
 
-		<div class="main-header__promo promo">
+		<div class="main-header__promo">
 			<div class="container">
-				<p class="promo__text">Взгляните на жизнь иначе!</p>
-			
-				<div class="promo__image">
-					<img src="#" width="" height="" alt="">	
-				</div>
+				<p class="main-header__text">Взгляните на жизнь иначе!</p>
+			</div>
+			<div class="main-header__image">
+					<img src="img/prmo.png" width="320" height="313" alt="promo image">	
 			</div>
 		</div>
 	</header>	
@@ -44,13 +57,13 @@
 	<div class="download">
 		<div class="container">
 			<div class="download__button">
-				<a href="#" class="button button--download">Скачать приложение</a>	
+				<a href="#" class="button button--download link">Скачать приложение</a>	
 			</div>
 			
 			<div class="download__sistems">	
-				<div class="download__apple"></div>
-				<div class="download__android"></div>
-				<div class="download__windows"></div>
+				<div class="download__icon download__apple"></div>
+				<div class="download__icon download__android"></div>
+				<div class="download__icon download__windows"></div>
 			</div>
 
 			<p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -64,8 +77,11 @@
 				<p class="information__title">Устали от серости мегаполиса?</p>
 				<p class="information__title">Нам есть, что вам предложить!</p>
 			</div>
+		</div>
 
-			<div class="information__item">
+			<div class="information__items">
+				<div class="container">
+					<div class="information__item">
 				<h3 class="information__header">Поднимает настроение</h3>
 				<p class="information__text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
 			</div>
@@ -81,7 +97,10 @@
 			</div>
 			
 			<div class="information__image">
-				<img src="" alt="" width="" height="">
+				<img src="img/the-phone.png" alt="phone_photo" width="157" height="278">
+			</div>
+				</div>
+			
 			</div>
 		</div>
 	</div>
@@ -106,11 +125,9 @@
 
 
 	<div class="price-slider">
-		<div class="container">
-			<div class="table-wrapper">
-				<table class="price-table">
-					<tr class="price-table__row">
-
+		<div class="table-wrapper">
+			<table class="price-table">
+				<tr class="price-table__row">
 					<th class="price-table__header">
 						<span class="price-table__name">База</span>
 						<span class="price-table__price">1,99 USD</span>
@@ -126,66 +143,64 @@
 						<span class="price-table__name">Анлим</span>
 						<span class="price-table__price">9,99 USD</span>
 					</th>
+				</tr>
 
-					</tr>
+				<tr class="price-table__row">
+					<td class="price-table__text">Розовый фильтр</td>
+					
+					<td class="price-table__cell">
+						<span class="price-table__icon price-table__icon--checked"></span>
+					</td>
 
-					<tr class="price-table__row">
-						<td class="price-table__text">Розовый фильтр</td>
-						
-						<td class="price-table__cell">
-							<span class="price-table__icon price-table__icon--checked"></span>
-						</td>
+					<td class="price-table__cell">
+						<span class="price-table__icon price-table__icon--checked"></span>
+					</td>
 
-						<td class="price-table__cell">
-							<span class="price-table__icon price-table__icon--checked"></span>
-						</td>
+					<td class="price-table__cell">
+						<span class="price-table__icon price-table__icon--checked"></span>
+					</td>
+				</tr>
 
-						<td class="price-table__cell">
-							<span class="price-table__icon price-table__icon--checked"></span>
-						</td>
-					</tr>
+				<tr class="price-table__row">
+					<td class="price-table__text">Смайлики</td>
+					
+					<td class="price-table__cell">
+						<span class="price-table__icon price-table__icon--unchecked"></span>
+					</td>
 
-					<tr class="price-table__row">
-						<td class="price-table__text">Смайлики</td>
-						
-						<td class="price-table__cell">
-							<span class="price-table__icon price-table__icon--unchecked"></span>
-						</td>
+					<td class="price-table__cell">
+						<span class="price-table__icon price-table__icon--checked"></span>
+					</td>
 
-						<td class="price-table__cell">
-							<span class="price-table__icon price-table__icon--checked"></span>
-						</td>
+					<td class="price-table__cell">
+						<span class="price-table__icon price-table__icon--checked"></span>
+					</td>
 
-						<td class="price-table__cell">
-							<span class="price-table__icon price-table__icon--checked"></span>
-						</td>
+				</tr>
 
-					</tr>
+				<tr class="price-table__row">
+					<td class="price-table__text">Комментарии</td>
+					
+					<td class="price-table__cell">
+						<span class="price-table__icon price-table__icon--unchecked"></span>
+					</td>
 
-					<tr class="price-table__row">
-						<td class="price-table__text">Комментарии</td>
-						
-						<td class="price-table__cell">
-							<span class="price-table__icon price-table__icon--unchecked"></span>
-						</td>
+					<td class="price-table__cell">
+						<span class="price-table__icon price-table__icon--unchecked"></span>
+					</td>
 
-						<td class="price-table__cell">
-							<span class="price-table__icon price-table__icon--unchecked"></span>
-						</td>
-
-						<td class="price-table__cell">
-							<span class="price-table__icon price-table__icon--checked"></span>
-						</td>
-					</tr>
-				</table>	
-			</div>
+					<td class="price-table__cell">
+						<span class="price-table__icon price-table__icon--checked"></span>
+					</td>
+				</tr>
+			</table>	
+		</div>
 
 
-			<div class="price-slider__controls slider-controls">
-				<i class="slider-controls__item"></i>
-				<i class="slider-controls__item slider-controls__item--active"></i>
-				<i class="slider-controls__item"></i>
-			</div>
+		<div class="price-slider__controls slider-controls">
+			<i class="slider-controls__item"></i>
+			<i class="slider-controls__item slider-controls__item--active"></i>
+			<i class="slider-controls__item"></i>
 		</div>
 	</div>
 
@@ -193,8 +208,7 @@
 		<div class="footer__contact">
 			<div class="container">
 				
-				<p class="footer__title">Остались вопросы?
-					Свяжитесь с нами!</p>
+				<p class="footer__title">Остались вопросы? Свяжитесь с нами!</p>
 					
 				<div class="footer__item footer-item">
 					<h3 class="footer-item__header">Звоните:</h3>
